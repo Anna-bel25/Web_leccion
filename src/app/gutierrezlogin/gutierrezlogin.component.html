@@ -1,0 +1,48 @@
+<mat-card class="card">
+  <mat-card-title><h3>Tabla</h3></mat-card-title>
+  <button class="btn btn-right" (click)="cancelar()">Cancelar</button>
+
+  <mat-card-content>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="cedula">
+        <th mat-header-cell *matHeaderCellDef>Código</th>
+        <td mat-cell *matCellDef="let element">{{ element.cedula }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="nombres">
+        <th mat-header-cell *matHeaderCellDef>Descripcion del producto</th>
+        <td mat-cell *matCellDef="let element">{{ element.nombres }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="apellidos">
+        <th mat-header-cell *matHeaderCellDef>Precio de compra</th>
+        <td mat-cell *matCellDef="let element">{{ element.apellidos }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="password">
+        <th mat-header-cell *matHeaderCellDef>Precio de venta</th>
+        <td mat-cell *matCellDef="let element">{{ element.password }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="acciones">
+        <th mat-header-cell *matHeaderCellDef class="header-cell"></th>
+        <td
+          mat-cell
+          *matCellDef="let element; let i = index"
+          class="actions-cell"
+        >
+          <a
+            class="action-link"
+            matTooltip="Eliminar usuario"
+            (click)="deleteRow(element)"
+          >
+            <i class="fa-solid fa-trash-can"></i>
+          </a>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </mat-card-content>
+</mat-card>

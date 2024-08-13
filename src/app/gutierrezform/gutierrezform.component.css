@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2? family=Montserrat:ital,wght@0,300;0,500;0,900;1,300;1,500;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+section {
+  padding-top: 2rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  padding: 5rem;
+  padding-bottom: 3rem;
+}
+
+
+.btn {
+  width: 150px; 
+  text-align: center;
+  background: #ff7800;
+  color: #fff;
+  padding: 0.2rem .5rem;
+  border: 0.2rem solid #ff7800;
+  cursor: pointer;
+  font-size: .9rem;
+  text-transform: capitalize;
+  border-radius: 5rem;
+}
+
+.btn:hover {
+  background: rgba(255, 165, 0, 0.2);
+  color: #ff7800;
+}
+
+
+.btn-left {
+  margin-right: auto;
+}
+
+.btn-right {
+  margin-left: 1000px;
+}
+
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  
+}
+
+.toolbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+
+mat-card {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: rgba(231, 236, 244, 0.361);
+  backdrop-filter: blur(15px);
+}
+
+.actions-cell {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 0;
+  padding: 1rem;
+}
+
+.action-link {
+  display: inline-block;
+  padding: 5px;
+}
+
+.header-cell {
+  width: 20%;
+}
+
+.mensaje-exito {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+i {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 5rem;
+  background: #eee;
+  color: #130f40;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i:hover {
+  background: #ff7800;
+  color: #fff;
+}
+
+.mat-mdc-form-field {
+  margin-left: 0;
+  width: 100%;
+}
+
+h2{
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #130f40;
+  text-transform: capitalize;
+  text-align: center;
+}

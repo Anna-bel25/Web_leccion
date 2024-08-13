@@ -1,0 +1,33 @@
+
+<section>
+<mat-card> 
+    <div style="text-align:center;">
+        <mat-card-title>Formulario</mat-card-title>
+        <div *ngIf="exito" class="mensaje-exito">Datos agregados con éxito</div>
+    </div>   
+    <br>
+    <form [formGroup]="usuarioNuevo"> 
+        <!-- [formGroup]="usuarioNuevo" -->
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Código" formControlName="cedula">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Descripcion del producto" formControlName="nombres">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Precio de compra" formControlName="apellidos">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Precio de venta" formControlName="password">
+        </mat-form-field>
+
+        <button mat-raised-button (click)="onSubmit()">Aceptar</button>
+        <button mat-raised-button color="accent" (click)="openDialogConsultar()">Consultar</button>      
+    </form>
+    
+</mat-card>
+
+</section>
